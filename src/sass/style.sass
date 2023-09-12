@@ -188,7 +188,35 @@ img
             font-size: 13px
         @media (max-width: 768px)
             font-size: 16px
-      
+    &-contact
+        margin-top: 30px
+        &__block
+            display: flex
+            justify-content: space-between
+            gap: 145px
+            @media (max-width: 1200px)
+                flex-direction: column
+                gap: 15px
+        &__info
+            width: 50%
+            @media (max-width: 768px)
+                width: 80%
+        &__text
+            color: #333333
+            font-size: 15px
+            line-height: 24px
+            +reg
+        &__mobile
+            width: 50%
+            @media (max-width: 768px)
+                width: 80%
+            // margin-left: 140px        
+        &__tel
+            text-decoration: none
+            color: #333333
+            margin-top: 6px
+            display: block
+            +bold  
 
 
         
