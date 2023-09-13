@@ -35,6 +35,12 @@ img
     padding: 20px 25px
     font-size: 15px
 
+.section-title
+    font-size: 30px
+    +bold
+    text-align: center
+    line-height: 45px
+
 .header
     padding: 20px 0
     &-block 
@@ -142,7 +148,7 @@ img
     background: url('../img/offer-bg.jpg') no-repeat
     background-position: center right
     // background-position-x: 1300px //moje css
-    background-size: contain
+    background-size: 50% //contain
     position: relative
     @media (max-width: 1200px)
         background-size: cover
@@ -216,7 +222,33 @@ img
             color: #333333
             margin-top: 6px
             display: block
-            +bold  
+            +bold
+
+.portfolio
+    padding: 100px 0
+    background: $grey url(../img/portfolio-bg.png) left repeat-y
+    background-size: 50%
+    &__title
+        margin-bottom: 100px
+        color: $accent
+    &__arrows
+        max-width: 120px
+        display: flex
+        justify-content: space-between
+        margin: auto
+        margin-top: 70px
+.arrows__left,
+.arrows__right
+    cursor: pointer
+
+.slider
+    &__image
+        margin: auto
+
+
+
+
+
 .modal
     position: fixed
     left: 0
