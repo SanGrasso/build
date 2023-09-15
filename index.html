@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="src/css/normalize.css">
     <!-- <link rel="stylesheet" href="src/css/slick-theme.css"> -->
     <link rel="stylesheet" href="src/css/slick.css">
+    <link rel="stylesheet" href="src/css/animate.min.css">
     <link rel="stylesheet" href="src/css/style.css">
     <title>HouseFix</title>
 </head>
@@ -13,15 +14,15 @@
     <header class="header">
         <div class="container">
             <div class="header-block">
-                <div class="header__logo">
+                <div class="header__logo wow animate__animated animate__fadeInLeft">
                     <img src="src/img/Logo.svg" alt="logo">
                 </div>
                 <div class="header__info">
-                    <div class="header__contacts">
+                    <div class="header__contacts wow animate__animated animate__fadeInRight">
                         <span class="header__address">Praha</span>
                         <a href="tel:+420777167699" class="header__phone">+420 777 167 699</a>
                     </div>
-                    <button class="button header__button" id="button">Zavolejte mi</button>
+                    <button class="button header__button wow animate__animated animate__fadeInRight" data-wow-delay=".2s" id="button">Zavolejte mi</button>
                 </div>
             </div>
         </div>
@@ -30,7 +31,7 @@
         <section class="main">
             <div class="container">
                 <div class="main-block">
-                    <div class="main-text">
+                    <div class="main-text wow animate__animated animate__fadeInLeft">
                         <h1 class="main-text__title">Dekorace vnitřních prostorů "na klíč"</h1>
                         <span class="main-text__subtitle">se zárukou kvality stanovené ve smlouvě</span>
                         <ul class="main-list">
@@ -50,7 +51,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="main-image">
+                    <div class="main-image wow animate__animated animate__fadeInRight">
                         <img src="src/img/main-image.png" alt="Rozpoložení pokoje">
                     </div>
                 </div>
@@ -60,20 +61,20 @@
         <section class="offer">
             <div class="container">
                 <div class="offer-block">
-                    <h2 class="offer-title">Bezplatně vypracujeme design-projekt pro Váš domov a realizujeme ho!</h2>
-                    <span class="offer-subtitle">Zanechte poptávku pro vypracování bezplatného design-projektu!</span>
+                    <h2 class="offer-title wow animate__animated animate__backInLeft" data-wow-delay=".2s" >Bezplatně vypracujeme design-projekt pro Váš domov a realizujeme ho!</h2>
+                    <span class="offer-subtitle wow animate__animated animate__backInLeft" data-wow-delay=".6s">Zanechte poptávku pro vypracování bezplatného design-projektu!</span>
                     <form action="" class="form offer__form">
-                        <input type="text" class="input offer__input" placeholder="Vaše jméno">
-                        <input type="tel" class="input offer__input" placeholder="Váš telefon">
-                        <button class="button offer__button">Získejte bezplatný design-projekt
+                        <input type="text" class="input offer__input wow animate__animated animate__backInLeft" data-wow-delay=".8s" placeholder="Vaše jméno">
+                        <input type="tel" class="input offer__input wow animate__animated animate__backInLeft" data-wow-delay="1s" placeholder="Váš telefon">
+                        <button class="button offer__button wow animate__animated animate__backInLeft" data-wow-delay="1.2s">Získejte bezplatný design-projekt
                         </button>
                     </form>
                     <div class="offer-contact">
                         <!-- <div class="offer-contact__block"> -->
-                        <div class="offer-contact__info">
-                            <span class="offer-contact__text">Náš manažer vám zavolá v průběhu 60 sekund</span>
+                        <div class="offer-contact__info wow animate__animated animate__backInLeft"data-wow-delay="1.5s"> 
+                            <span class="offer-contact__text ">Náš manažer vám zavolá v průběhu 60 sekund</span>
                         </div>
-                        <div class="offer-contact__mobile">
+                        <div class="offer-contact__mobile wow animate__animated animate__backInLeft"data-wow-delay="1.6s" ">
                             <span class="offer-contact__text">nebo nám zavolejte sami </span>
                             <a href="tel:+420777167699" class="offer-contact__tel">+420 777 167 699</a>
                         </div>
@@ -105,42 +106,42 @@
                 <h2 class="price__title section-title">Máme velmi flexibilní systém slev pro komplexní práce!</h2>
                 <span class="section-subtitle price__subtitle">Ceny za naše služby</span>
                 <div class="cards">
-                    <div class="card price__card">
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                         <div class="card__image"><img src="src/img/card_img1.jpg" alt="Koupelna"></div>
                         <div class="card__text">
                             <div class="card__title">Rekonstrukce koupelen a toalet</div>
                             <a href="#" class="card__link">Zjistit ceny</a>
                         </div>
                     </div>
-                    <div class="card price__card">
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                         <div class="card__image"><img src="src/img/card_img4.jpg" alt="Apartmán"></div>
                         <div class="card__text">
                             <div class="card__title">Rekonstrukce pokojů a apartmánůt</div>
                             <a href="#" class="card__link">Zjistit ceny</a>
                         </div>
                     </div>
-                    <div class="card price__card">
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
                         <div class="card__image"><img src="src/img/card_img5.jpg" alt="Kancelář"></div>
                         <div class="card__text">
                             <div class="card__title">Výzdoba kancelářských prostorů</div>
                             <a href="#" class="card__link">Zjistit ceny</a>
                         </div>
                     </div>
-                    <div class="card price__card">
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
                         <div class="card__image"><img src="src/img/card_img6.jpg" alt="Pokoj"></div>
                         <div class="card__text">
                             <div class="card__title">Rekonstrukce v nových budovách</div>
                             <a href="#" class="card__link">Zjistit ceny</a>
                         </div>
                     </div>
-                    <div class="card price__card">
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
                         <div class="card__image"><img src="src/img/card_img3.jpg" alt="Pokoj"></div>
                         <div class="card__text">
                             <div class="card__title">Rekonstrukce v nových budovách</div>
                             <a href="#" class="card__link">Zjistit ceny</a>
                         </div>
                     </div>
-                    <div class="card price__card">
+                    <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay="1s">
                         <div class="card__image"><img src="src/img/card_img2.jpg" alt="Pokoj"></div>
                         <div class="card__text">
                             <div class="card__title">Opravy chat a chalup</div>
@@ -175,6 +176,7 @@
 
     <script src="src/js/jquery-3.7.1.min.js"></script>
     <script src="src/js/slick.min.js"></script>
+    <script src="src/js/wow.min.js"></script>
     <script src="src/js/main.js"></script>
 </body>
 </html>
