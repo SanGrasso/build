@@ -574,7 +574,6 @@ img {
 .steps__title {
   margin-bottom: 60px;
   margin-bottom: 30px;
-  font-size: 18px;
 }
 .steps__subtitle {
   margin-bottom: 75px;
@@ -696,10 +695,10 @@ img {
 }
 @media (max-width: 640px) {
   .notice__text {
-    font-size: 25px;
+    font-size: 28px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 360px) {
   .notice__text {
     font-size: 18px;
     line-height: normal;
