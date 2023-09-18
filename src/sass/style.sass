@@ -4,7 +4,6 @@
 *
     box-sizing: border-box
 
-
 body
     +reg
 
@@ -40,7 +39,7 @@ img
     +bold
     text-align: center
     line-height: 45px
-    @media (max-width: 360px)
+    @media (max-width: 786px)
         font-size: 18px
         line-height: normal
 
@@ -49,11 +48,9 @@ img
     font-size: 20px
     text-align: center
     display: block
-    @media (max-width: 360px)
+    @media (max-width: 786px)
         font-size: 14px
         line-height: normal
-
-   
 
 .header
     padding: 20px 0
@@ -95,12 +92,15 @@ img
         display: flex
         align-items: center
         padding: 40px 0 15px 0
-        @media (max-width: 1200px)
+        @media (max-width: 786px)
             flex-direction: column
     &-text
         flex-basis: 50%
         @media (max-width: 1200px)
+            flex-basis: 50%
             margin-bottom: 30px
+        @media (max-width: 786px)
+            flex-basis: 100%
         &__title
             +bold
             font-size: 41px
@@ -110,6 +110,8 @@ img
             color: $accent
             @media (max-width: 1200px)
                 padding-right: 10px
+            @media (max-width: 786px)
+                font-size: 32px
             @media (max-width: 640px)
                 font-size: 24px
                 line-height: 1.4
@@ -122,10 +124,22 @@ img
                 font-size: 16px
                 line-height: 1.4
     &-image
+        width: 50%
         margin-right: -55px
-        @media (max-width: 1200px)
+        @media (max-width: 786px)
+            width:  100%
+        @media (max-width: 360px)    
+            margin: auto
+        img
+            width: 570px
             width: 100%
-            margin: 0 auto
+            @media (max-width: 1200px)
+            object-fit: cover
+            @media (max-width: 360px)
+            width: 270px 
+            object-fit: contain
+            width: 100%
+        
     &-list
         margin: 40px 0 0 0
         padding: 0 0 0 0
@@ -170,6 +184,7 @@ img
         background-size: cover
     @media (max-width: 768px)
         background: #fff
+        padding: 60px 0
     &:before
         content: ''
         width: 50%
@@ -177,7 +192,6 @@ img
         position: absolute
         background-color: #fff
         top: 0
-
     &-block
         width: 50%
         padding-right: 90px
@@ -190,6 +204,8 @@ img
         line-height: 35px
         max-width: 340px
         +bold
+        @media (max-width: 768px)
+            margin-top: 0
     &-subtitle
         display: inline-block
         max-width: 260px
@@ -231,8 +247,7 @@ img
         &__mobile
             width: 50%
             @media (max-width: 768px)
-                width: 80%
-            // margin-left: 140px        
+                width: 80%       
         &__tel
             text-decoration: none
             color: #333333
@@ -244,7 +259,7 @@ img
     padding: 100px 0
     background: $grey url(../img/portfolio-bg.png) left repeat-y
     background-size: 50%
-    @media (max-width: 360px)
+    @media (max-width: 768px)
         background: none
         background: $grey
         padding-top: 40px
@@ -452,13 +467,16 @@ img
         margin-bottom: 150px
         @media (max-width: 1200px)
             margin-bottom: 80px
-             
+        @media (max-width: 640px)
+            margin-bottom: 0 
+
 .benefits
     display: flex
     justify-content: space-between
     @media (max-width: 1200px)
         flex-wrap: wrap
         justify-content: space-evenly
+
 .benefit
     background-color: $benefit-bg
     height: 410px
@@ -474,8 +492,7 @@ img
         width: 100%
     @media (max-width: 360px)
         height: 305px
-        max-width: 275px
-         
+        max-width: 275px 
     &__text
         margin: 26px 80px 0 26px
         font-size: 16px
@@ -498,8 +515,7 @@ img
     &-block       
         display: flex
         justify-content: space-between
-        align-items: flex-start
-        
+        align-items: flex-start 
         @media (max-width: 882px)
             flex-wrap: wrap
             justify-content: space-evenly
@@ -515,9 +531,7 @@ img
         &__image
             margin-bottom: 41px
             @media (max-width: 360px)
-                margin-bottom: 31px
-                
-            
+                margin-bottom: 31px 
         &__text
             font-size: 18px
             font-weight: 400
@@ -540,13 +554,15 @@ img
         background-position: top center, center bottom
         background-size: 100% 50%, cover
         background-repeat: repeat-x, no-repeat
-        padding: 50px 0
+        padding: 46px 10px
     &-block
         display: flex
         @media (max-width: 768px)
             flex-direction: column
     &__interview
         flex-basis: 50%
+        @media (max-width: 768px)
+            padding-bottom: 20px
     &__form
         flex-basis: 50%
         padding-left: 200px
@@ -564,17 +580,18 @@ img
         border: 1px solid $border-input
         padding: 20px 25px
         font-size: 15px
-        
-
     &__button
         width: 100%
         max-width: 370px
         display: block
         height: 70px
         margin: 15px auto 30px auto
+        @media (max-width: 768px)
+            font-size: 14px
     &__description
         font-size: 15px
-
+        @media (max-width: 768px)
+            font-size: 14px
 
 .interview
     padding-right: 70px
@@ -582,7 +599,6 @@ img
         padding-right: 30px
     @media (max-width: 768px)
         padding-right: 0
-    
     &__title
         +bold
         font-size: 22px
@@ -592,27 +608,23 @@ img
             font-size: 18px
             margin-bottom: 40px
             margin-top: 15px
-            
+        @media (max-width: 786px)
+            line-height: normal    
     &__subtitle
         font-size: 16px
         margin-bottom: 100px
         display: block
         @media (max-width: 1200px)
             font-size: 14px
-            margin-bottom: 30px
+            margin-bottom: 60px
     &-list
         list-style-type: none
         padding: 0
-        // display: flex
-        // flex-direction: column
-        // justify-content: center
         &__item
             display: flex
             align-items: center
             margin-bottom: 25px
             +bold
-            
-
         &__counter
             max-width: 35px
             height: 35px
@@ -631,7 +643,8 @@ img
             font-size: 18px
             @media (max-width: 1200px)
                 font-size: 14px
-.form
+
+    .form
     &__title
         +bold
         font-size: 22px
@@ -641,7 +654,8 @@ img
             font-size: 18px
             margin-bottom: 40px
         @media (max-width: 768px)
-            padding-top: 100px
+            padding-top: 40px
+            line-height: 25.35px
     &__subtitle
         font-size: 16px
         margin-bottom: 50px
@@ -655,6 +669,7 @@ img
     @media (max-width: 768px)
         display: flex
         flex-direction: column-reverse
+
 .map
     width: 50%
     position: absolute
@@ -663,7 +678,6 @@ img
     @media (max-width: 768px)
         width: 100%
         position: relative
-
 
 .contacts
     flex-basis: 50%
@@ -675,10 +689,10 @@ img
         flex-basis: 100%
         padding-left: 0
         padding-top: 34px
+        padding-bottom: 40px
     &-block
         display: flex
         justify-content: flex-end
-
     &__title
         +bold
         font-size: 22px
@@ -686,12 +700,15 @@ img
         margin-bottom: 100px
         @media (max-width: 768px)
             margin-bottom: 34px
+            font-size: 18px
+            line-height: normal
     &-list
         padding: 0
         list-style-type: none
         &__icon
-            width: 20px
+            max-width: 20px
             height: 20px
+            width: 100%
             text-align: center
             line-height: 20px
             margin-right: 20px
@@ -700,8 +717,7 @@ img
             align-items: flex-start
             margin-bottom: 40px
             strong
-                +bold
-             
+                +bold    
         &__text
             line-height: 1.4
             a
@@ -710,12 +726,6 @@ img
                 &:hover
                     text-decoration: underline
                     
-
-
-
-
-
-
 .modal
     position: fixed
     left: 0
