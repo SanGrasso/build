@@ -973,6 +973,7 @@ img {
   width: 100%;
   max-width: 370px;
   height: 65px;
+  display: inline-block;
   margin-bottom: 15px;
   border-radius: 10px;
   border: 1px solid #dddddd;
@@ -1084,7 +1085,8 @@ img {
     font-size: 14px;
   }
 }
-.interview__title {
+
+.form__title {
   font-family: "Museo Sans Bold", sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -1092,24 +1094,24 @@ img {
   margin-bottom: 50px;
 }
 @media (max-width: 1200px) {
-  .interview__title {
+  .form__title {
     font-size: 18px;
     margin-bottom: 40px;
   }
 }
 @media (max-width: 768px) {
-  .interview__title {
+  .form__title {
     padding-top: 40px;
     line-height: 25.35px;
   }
 }
-.interview__subtitle {
+.form__subtitle {
   font-size: 16px;
   margin-bottom: 50px;
   display: block;
 }
 @media (max-width: 1200px) {
-  .interview__subtitle {
+  .form__subtitle {
     font-size: 14px;
     margin-bottom: 40px;
   }
